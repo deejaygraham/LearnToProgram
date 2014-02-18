@@ -1,0 +1,1 @@
+Learning to program in ruby so I got Chris Pine's book and started working through the exercises. So here they are.
