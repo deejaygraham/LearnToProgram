@@ -3,19 +3,17 @@
 puts 'Type in words, one per line. Enter empty line to finish'
 
 word_list = []
-list_index = 0
 
 while true
 
 	word = gets.chomp
 
-	if word == ''
-		break
-	end
+	# blank line entered
+	break if word.empty?
 
-	word_list[list_index] = word
-	list_index = list_index + 1
+	# shovel operator
+	word_list << word
 end
 
-puts 
+puts 'Words in sorted order'
 puts word_list.sort

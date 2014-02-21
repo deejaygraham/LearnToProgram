@@ -7,18 +7,11 @@ puts ''
 
 possible_leap_year = starting_year
 
-while possible_leap_year <= ending_year
+# using range and next if
+(starting_year..ending_year).each do | possible_leap_year |
 
-	if possible_leap_year.to_f % 4 == 0
-		if possible_leap_year.to_f % 100 == 0
-			if possible_leap_year.to_f % 400 == 0
-				puts possible_leap_year.to_s
-			end
-		else
-			puts possible_leap_year.to_s
-		end
-	end
-	
-	possible_leap_year = possible_leap_year + 1
+	next if possible_leap_year % 4 != 0
+	next if possible_leap_year % 100 == 0 && possible_leap_year % 400 != 0
+	puts possible_leap_year.to_s
 
 end
