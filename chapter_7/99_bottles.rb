@@ -11,4 +11,9 @@ bottle_count.downto(2) do | how_many_bottles |
 
 end
 
+puts '1 bottle of beer on the wall...'
+puts '1 bottle of beer'
+puts 'take it down, pass it around'
+puts '...no more bottles of beer on the wall'
+	
 puts 'hic!'
